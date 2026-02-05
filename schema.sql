@@ -1,3 +1,6 @@
+-- Marketplace A/B Testing Experiment Schema
+-- This schema supports analysis of experiment performance across variants,
+-- regions, and demand levels, enabling segmentation and data-driven decisions.
 
 CREATE TABLE EXPERIMENTS (
 	EXPERIMENT_ID INT PRIMARY KEY,
@@ -27,4 +30,5 @@ CREATE TABLE EXPERIMENT_EVENTS (
 	WAIT_TIME_MINUTES INT, -- time to vehicle
 	REVENUE NUMERIC(10, 2),
 	EVENT_DATE DATE
+
 );
