@@ -1,3 +1,7 @@
+-- Analyse experiment performance by demand level and variant
+-- This segmentation helps identify where the test variant performs best
+-- and supports targeted rollout decisions rather than global deployment
+
 SELECT
 	R.DEMAND_LEVEL,
 	E.VARIANT,
@@ -14,3 +18,4 @@ GROUP BY
 ORDER BY
 	R.DEMAND_LEVEL,
 	E.VARIANT
+
