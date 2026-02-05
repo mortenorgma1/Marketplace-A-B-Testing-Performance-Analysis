@@ -1,3 +1,9 @@
+-- Insert synthetic data for the marketplace A/B testing experiment
+-- Populates reference tables (regions, experiments) and generates users
+-- and experiment events to simulate realistic marketplace behaviour.
+-- Data is designed to support analysis of variant performance across
+-- different demand levels, including completion rate, wait time, and revenue.
+
 INSERT INTO regions (region_id, region_name, demand_level) VALUES
 (1, 'City Center', 'High'),
 (2, 'Business District', 'High'),
@@ -78,3 +84,4 @@ END AS revenue,
 FROM users u
 JOIN regions r ON u.region_id = r.region_id,
      generate_series(1, 2) gs;  -- average ~2 events per user
+
