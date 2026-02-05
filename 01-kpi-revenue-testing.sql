@@ -1,3 +1,7 @@
+-- Compare overall performance between control (A) and test (B) variants
+-- Calculates event volume, completion rate, average wait time, and revenue
+-- Used to evaluate high-level impact of the experiment
+
 SELECT
 	VARIANT,
 	COUNT(*) AS EVENTS,
@@ -7,4 +11,5 @@ SELECT
 FROM
 	EXPERIMENT_EVENTS
 GROUP BY
+
 	VARIANT
