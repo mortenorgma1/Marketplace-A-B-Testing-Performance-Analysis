@@ -117,5 +117,7 @@ The experiment highlights a clear trade-off. Variant B improves average wait tim
 
 ## Intended Audience
 This project is relevant for product managers, operations teams, and data and analytics teams and demonstrates practical experimentation analysis in a marketplace context.
-<img width="1303" height="748" alt="image" src="https://github.com/user-attachments/assets/f26ff428-fee2-47e8-9c46-35239a2b8ea6" />
+<img width="1258" height="727" alt="image" src="https://github.com/user-attachments/assets/83a99bf4-e726-4d42-bba7-f6b152e52f76" />
+
+
 
